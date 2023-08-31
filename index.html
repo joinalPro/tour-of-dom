@@ -16,18 +16,20 @@
             <li>August</li>
             <li>September</li>
             <li>October</li>
+            <li>November</li>
+            <li>December</li>
         </ul>
     </main>
     <script src="js/dom.js"></script>
     <script>
-        const student ={
-            name: 'Abul',
-            ID: 11,
-            Study: function(time){
-                console.log(time, 'study kortese')
-            }
+        const liCollection  = document.getElementsByTagName('li');
+        for(const li of liCollection){
+            console.log(li.innerText);
         }
-        console.log('adding JS in the html file');
+        const allHeadings = document.getElementsByTagName('h1');
+        for(const h1 of allHeadings){
+            console.log(h1.innerText);
+        }
     </script>
 </body>
 </html>
