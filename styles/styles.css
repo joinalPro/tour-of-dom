@@ -1,3 +1,12 @@
 h1{
     color: lightcoral;
 }
+#fruits-title{
+    color:black;
+}
+.important-places{
+    color: blueviolet;
+}
+.month-list li{
+    color:cadetblue;
+}

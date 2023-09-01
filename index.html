@@ -11,35 +11,47 @@
         <h1>Welcome to my DOM</h1>
     </header>
     <main>
-        <section>
+        <section class="month-list">
             <h1>My Very first DOM Task</h1>
-        <ul>
-            <li>August</li>
-            <li>September</li>
-            <li>October</li>
-            <li>November</li>
-            <li>December</li>
-        </ul>
+            <ul>
+                <li>August</li>
+                <li>September</li>
+                <li>October</li>
+                <li>November</li>
+                <li>December</li>
+            </ul>
         </section>
         <section>
-            <h1>Fruits I like</h1>
+            <h1 id="fruits-title">Fruits I like</h1>
             <ul>
                 <li>Apple</li>
                 <li>Banana</li>
                 <li>Carrot</li>
             </ul>
         </section>
+        <section>
+            <h1>Places I like to visit</h1>
+            <ul>
+                <li class="important-places">Sylhet</li>
+                <li class="important-places">Chittagong</li>
+                <li class="important-places">Kuwakata</li>
+                <li class="important-places">Bandorbon</li>
+            </ul>
+        </section>
     </main>
     <script src="js/dom.js"></script>
     <script>
-        const liCollection  = document.getElementsByTagName('li');
-        for(const li of liCollection){
-            console.log(li.innerText);
-        }
-        const allHeadings = document.getElementsByTagName('h1');
-        for(const h1 of allHeadings){
-            console.log(h1.innerText);
-        }
+      const places =  document.getElementsByClassName('important-places');
+    //   console.log(places);
+    for(const place of places){
+        console.log(place.innerText);
+    }
+    // query Selector
+    const someLi = document.querySelectorAll('.month-list li');
+    for(const li of someLi){
+        console.log(li.innerText);
+    }
+
     </script>
 </body>
 </html>
